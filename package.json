@@ -1,7 +1,7 @@
 {
   "name": "custom-api-deploy",
   "version": "1.0.0",
-  "description": "create custom api with mangoDb Atlas(cloud DB) and deploy(render.com)",
+  "description": "create custom api with mongoDb Atlas(cloud DB) and deploy(render.com)",
   "main": "app.js",
   "type": "module",
   "scripts": {
@@ -12,6 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "custom-api-deploy": "file:",
-    "express": "^4.21.2"
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.6"
   }
 }

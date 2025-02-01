@@ -11,7 +11,8 @@
 ### packages used:
 
 1. express
-2. 
+2. mongoose - db config
+3. dotenv - environmental config
 
 
 
