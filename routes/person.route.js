@@ -1,11 +1,13 @@
 import express from "express";
 
-import { personCreate,personIndex,personUpdate,personDelete } from "../controllers/person.controller.js";
+import { personCreate,personIndex,personUpdate,personDelete,personDetail } from "../controllers/person.controller.js";
 
 const router = express.Router();
 
 // read 
 router.get("/",personIndex);
+// single read
+router.get("/:id",personDetail);
 
 // create 
 router.post("/",personCreate);

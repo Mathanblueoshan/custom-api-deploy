@@ -7,6 +7,10 @@ const PORT = 7070;
 
 const app = express();
 
+// data understanding middleware
+app.use(express.json()); //can read the req.body (raw)
+app.use(express.urlencoded({extended:true})); // can read the formurl encoded data
+
 //connect DB
 connectDB();
 

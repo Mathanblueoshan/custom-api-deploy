@@ -19,3 +19,4 @@
 ### notes
 
 1. whenever use import add type is module at package.json
+2. .env - variable's value not have double quotes and spaces
