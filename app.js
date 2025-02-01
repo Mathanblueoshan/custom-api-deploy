@@ -1,15 +1,21 @@
-const express = require("express");
+import express from "express";
 
+import personRoutes from "./routes/person.route.js";
+
+const PORT = 7070;
 
 const app = express();
 
-app.use("/",(req,res) => {
-res.json({
-  data:{
-    message:"Hello!, This is Express app on Node Server."
-  }
-})
-})
-app.listen(7070,()=>{
-console.log("server running on http://localhost:7070");
+app.get("/",(req,res) => {
+ res.json({msg:"Hello! API Ready for You!"});
+});
+
+// CRUD functionalities
+
+app.use("/movies",personRoutes);
+
+
+
+app.listen(PORT,()=>{
+console.log(`server running on http://localhost:${PORT}`);
 });
