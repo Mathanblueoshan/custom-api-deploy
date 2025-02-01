@@ -20,3 +20,7 @@
 
 1. whenever use import add type is module at package.json
 2. .env - variable's value not have double quotes and spaces
+
+
+link:
+https://youtu.be/0BRC_6_0zVU?si=g5DP_bfkmzLh83fV
