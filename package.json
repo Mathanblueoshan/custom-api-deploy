@@ -1,0 +1,15 @@
+{
+  "name": "custom-api-deploy",
+  "version": "1.0.0",
+  "description": "create custom api with mangoDb Atlas(cloud DB) and deploy(render.com)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "mathan kumar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
