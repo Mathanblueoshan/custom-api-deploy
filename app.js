@@ -6,13 +6,11 @@ const PORT = 7070;
 
 const app = express();
 
-app.get("/",(req,res) => {
- res.json({msg:"Hello! API Ready for You!"});
-});
+
 
 // CRUD functionalities
 
-app.use("/movies",personRoutes);
+app.use("/person",personRoutes);
 
 
 

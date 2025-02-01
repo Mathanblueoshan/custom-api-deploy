@@ -1,25 +1,19 @@
 import express from "express";
 
+import { personCreate,personIndex,personUpdate,personDelete } from "../controllers/person.controller.js";
+
 const router = express.Router();
 
 // read 
-router.get("/person",(req,res) => {
- 
-});
+router.get("/",personIndex);
 
 // create 
-router.post("/person",(req,res) => {
- 
-});
+router.post("/",personCreate);
 
 // update 
-router.put("/person/:id",(req,res) => {
-  
-});
+router.put("/:id",personUpdate);
 
 // delete 
-router.delete("/person/:id",(req,res) => {
-  
-});
+router.delete("/:id",personDelete);
 
 export default router;
